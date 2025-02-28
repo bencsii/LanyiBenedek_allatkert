@@ -4,7 +4,8 @@
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello, World!");
+			Pingvin_class allat = new Pingvin_class(45,"him"); // ez csak test
+			Console.WriteLine(allat);
 		}
 	}
 }
