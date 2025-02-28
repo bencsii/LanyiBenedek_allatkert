@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace allatkert_feladat
 {
-	internal class Tigris
+	internal class Capa
 	{
 		private string nev;
 		private int sebesseg;
@@ -17,7 +17,8 @@ namespace allatkert_feladat
 		public string Nem { get => nem; set => nem = value; }
 
 
-		public Tigris(string nev, int sebesseg, string nem)
+
+		public Capa(string nev, int sebesseg, string nem)
 		{
 			this.nev = nev;
 			this.sebesseg = sebesseg;
@@ -29,5 +30,6 @@ namespace allatkert_feladat
 		{
 			return $"{nev},{sebesseg}, {nem}";
 		}
+
 	}
 }

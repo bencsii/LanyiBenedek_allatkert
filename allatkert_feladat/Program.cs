@@ -1,11 +1,17 @@
-﻿namespace allatkert_feladat
+﻿using allatkert_feladat;
+
+namespace allatkert_feladat
 {
 	internal class Program
 	{
 		static void Main(string[] args)
 		{
-			Pingvin_class allat = new Pingvin_class(45,"him"); // ez csak test
-			Console.WriteLine(allat);
+			Allatkert allatkert = new Allatkert();
+
+			allatkert.AllatokLista.Add(new Tigris("Tigris", 10, "hím"));
+
+
 		}
 	}
 }
+

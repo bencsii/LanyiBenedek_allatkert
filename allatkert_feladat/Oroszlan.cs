@@ -8,17 +8,18 @@ namespace allatkert_feladat
 {
 	internal class Oroszlan
 	{
+		private string nev;
 		private int sebesseg;
 		private string nem;
 
-
+		public string Nev { get => nev; set => nev = value; }
 		public int Sebesseg { get => sebesseg; set => sebesseg = value; }
 		public string Nem { get => nem; set => nem = value; }
 
 
-		public Oroszlan(int sebesseg, string nem)
+		public Oroszlan(string nev, int sebesseg, string nem)
 		{
-
+			this.nev = nev;
 			this.sebesseg = sebesseg;
 			this.nem = nem;
 		}
@@ -26,7 +27,7 @@ namespace allatkert_feladat
 
 		public override string ToString()
 		{
-			return $"{sebesseg}, {nem}";
+			return $"{nev},{sebesseg}, {nem}";
 		}
 	}
 }
