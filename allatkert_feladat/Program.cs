@@ -8,7 +8,12 @@ namespace allatkert_feladat
 		{
 			Allatkert allatkert = new Allatkert();
 
-			allatkert.AllatokLista.Add(new Tigris("Tigris", 10, "hím"));
+			allatkert.peldanyosit();
+			allatkert.telitettseg();
+			allatkert.race();
+
+			
+			
 
 
 		}
